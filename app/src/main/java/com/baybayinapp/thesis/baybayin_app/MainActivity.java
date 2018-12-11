@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button toChart;
+    private Button toChart, toHistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +24,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //history
+        toHistory = findViewById(R.id.tohistory);
+        toHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoHistory();
+            }
+        });
     }
 
-
     public void gotoChart(){
-
         Intent intent = new Intent(this , Chart.class);
         startActivity(intent);
 
+    }
 
+    public void gotoHistory(){
+        Intent intent = new Intent(this, History.class);
+        startActivity(intent);
     }
 }
