@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button toChart, toHistory;
+    private Button toChart, toHistory, toQuiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,17 @@ public class MainActivity extends AppCompatActivity {
                 gotoHistory();
             }
         });
+
+        //quiz
+        toQuiz = (Button) findViewById(R.id.toquiz);
+        toQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoQuiz();
+            }
+        });
+
+
     }
 
     public void gotoChart(){
@@ -44,4 +55,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, History.class);
         startActivity(intent);
     }
+
+    public void gotoQuiz(){
+
+        Intent intent = new Intent(this, Quiz.class);
+        startActivity(intent);
+
+    }
+
+
 }
