@@ -9,7 +9,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
         android:orientation="vertical"
         android:weightSum="50">
 
@@ -33,9 +38,12 @@
                     android:id="@+id/btnA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="A"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -59,9 +67,12 @@
                     android:id="@+id/btnBA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="B"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -85,9 +96,12 @@
                     android:id="@+id/btnKA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="K"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -111,9 +125,12 @@
                     android:id="@+id/btnDA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="D"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -148,9 +165,12 @@
                     android:id="@+id/btnE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="E"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -175,9 +195,12 @@
                     android:id="@+id/btnGA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="G"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -201,9 +224,12 @@
                     android:id="@+id/btnHA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="H"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -227,9 +253,12 @@
                     android:id="@+id/btnI"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="I"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -265,9 +294,12 @@
                     android:id="@+id/btnLA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="L"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -292,9 +324,12 @@
                     android:id="@+id/btnMA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="M"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -318,9 +353,12 @@
                     android:id="@+id/btnNA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="ᜈ"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -344,9 +382,12 @@
                     android:id="@+id/btnNGA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="N"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -381,9 +422,12 @@
                     android:id="@+id/btnO"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="O"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -407,9 +451,12 @@
                     android:id="@+id/btnPA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="P"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -433,9 +480,12 @@
                     android:id="@+id/btnRA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="R"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -460,8 +510,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="S"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -497,9 +549,12 @@
                     android:id="@+id/btnTA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="T"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -523,9 +578,12 @@
                     android:id="@+id/btnU"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="U"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -549,9 +607,12 @@
                     android:id="@+id/btnWA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="W"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -575,9 +636,12 @@
                     android:id="@+id/btnYA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="Y"
+                    android:textColor="@color/colorWhite"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
