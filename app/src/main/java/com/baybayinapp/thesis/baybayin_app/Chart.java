@@ -1,11 +1,16 @@
 package com.baybayinapp.thesis.baybayin_app;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class Chart extends AppCompatActivity {
 
@@ -15,7 +20,8 @@ public class Chart extends AppCompatActivity {
                     oBTN,paBTN,raBTN,saBTN,
                     taBTN,uBTN,waBTN,yaBTN;
 
-    private TextView mainLearnTV;
+
+    Context context;
 
 
 
@@ -26,7 +32,7 @@ public class Chart extends AppCompatActivity {
 
 
         //main learn Text View initialization
-        mainLearnTV = (TextView) findViewById(R.id.learnTV);
+        //mainLearnTV = (TextView) findViewById(R.id.learnTV);
 
 
         //button listener initialization
@@ -47,6 +53,8 @@ public class Chart extends AppCompatActivity {
             public void onClick(View view) {
 
                 opentoLearn();
+
+
 
             }
         });
@@ -236,12 +244,16 @@ public class Chart extends AppCompatActivity {
     }
 
     public void opentoLearn(){
+
         Intent intent = new Intent(this , Learn.class);
         startActivity(intent);
 
-
-
     }
+
+
+
+
+
 
 
 }

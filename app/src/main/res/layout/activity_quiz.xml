@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Quiz">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,21 +14,15 @@
         android:padding="10dp">
 
         <Button
-            android:id="@+id/tohistory"
+            android:id="@+id/toreadquiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="History" />
+            android:text="Reading Quiz" />
 
         <Button
-            android:id="@+id/tochart"
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Learn" />
-
-        <Button
-            android:id="@+id/toquiz"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quiz" />
+            android:text="Handwriting Quiz" />
     </LinearLayout>
 </RelativeLayout>

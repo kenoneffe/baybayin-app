@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".History" />
         <activity android:name=".Learn" />
-        <activity android:name=".Chart"></activity>
+        <activity android:name=".Chart" />
+        <activity android:name=".Quiz" />
+        <activity android:name=".ReadQuiz"></activity>
     </application>
 
 </manifest>
