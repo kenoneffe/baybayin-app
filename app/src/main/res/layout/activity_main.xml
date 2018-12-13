@@ -9,26 +9,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="@color/colorPrimary"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="B A Y B A Y I N"
+            android:textColor="@color/colorWhite"
+            android:textSize="45sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tohistory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="History" />
+            android:layout_marginTop="40dp"
+            android:background="@drawable/mainbtn"
+            android:text="History"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tochart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Learn" />
+            android:layout_marginTop="5dp"
+            android:background="@drawable/mainbtn"
+            android:text="Learn"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/toquiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quiz" />
+            android:layout_marginTop="5dp"
+            android:background="@drawable/mainbtn"
+            android:text="Quiz"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
     </LinearLayout>
 </RelativeLayout>

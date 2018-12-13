@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="2dp"
         android:orientation="vertical"
         android:weightSum="50">
 
@@ -16,14 +17,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_weight="10"
             android:orientation="horizontal"
-            android:weightSum="4"
-            android:layout_margin="5dp">
+            android:weightSum="4">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -44,7 +46,7 @@
                     android:layout_weight="1"
                     android:text="A"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -61,7 +63,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="B"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -70,7 +72,7 @@
                     android:layout_weight="1"
                     android:text="BA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -87,7 +89,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="K"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -96,7 +98,7 @@
                     android:layout_weight="1"
                     android:text="KA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,7 +115,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="D"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -122,7 +124,7 @@
                     android:layout_weight="1"
                     android:text="DA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>
@@ -130,14 +132,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_weight="10"
-            android:weightSum="4"
             android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:weightSum="4">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -149,7 +152,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="E"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -158,7 +161,7 @@
                     android:layout_weight="1"
                     android:text="E"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -185,7 +188,7 @@
                     android:layout_weight="1"
                     android:text="GA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -202,7 +205,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="H"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView9"
@@ -211,7 +214,7 @@
                     android:layout_weight="1"
                     android:text="HA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -228,17 +231,17 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="I"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView"
-                    tools:text="I"
+                    android:text="I"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    tools:text="I" />
             </LinearLayout>
 
         </LinearLayout>
@@ -246,14 +249,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_weight="10"
-            android:weightSum="4"
             android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:weightSum="4">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -265,7 +269,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="L"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView11"
@@ -274,7 +278,7 @@
                     android:layout_weight="1"
                     android:text="LA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -292,7 +296,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="M"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView12"
@@ -301,7 +305,7 @@
                     android:layout_weight="1"
                     android:text="MA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -318,7 +322,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="ᜈ"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -327,7 +331,7 @@
                     android:layout_weight="1"
                     android:text="NA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -353,7 +357,7 @@
                     android:layout_weight="1"
                     android:text="NGA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>
@@ -361,14 +365,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_weight="10"
-            android:weightSum="4"
             android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:weightSum="4">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -389,7 +394,7 @@
                     android:layout_weight="1"
                     android:text="O"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -406,7 +411,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="P"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView16"
@@ -432,7 +437,8 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="R"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/textView17"
                     android:layout_width="match_parent"
@@ -440,7 +446,7 @@
                     android:layout_weight="1"
                     android:text="RA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -466,7 +472,7 @@
                     android:layout_weight="1"
                     android:text="SA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>
@@ -474,15 +480,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="4"
-            android:orientation="horizontal"
             android:layout_margin="5dp"
             android:layout_weight="10
-">
+"
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -503,7 +510,7 @@
                     android:layout_weight="1"
                     android:text="TA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -529,7 +536,7 @@
                     android:layout_weight="1"
                     android:text="U"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -546,7 +553,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="W"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView21"
@@ -555,7 +562,7 @@
                     android:layout_weight="1"
                     android:text="WA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -572,7 +579,7 @@
                     android:fontFamily="@font/baybayin_clu"
                     android:text="Y"
                     android:textSize="50dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView22"
@@ -581,13 +588,9 @@
                     android:layout_weight="1"
                     android:text="YA"
                     android:textAlignment="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
-
-
-
-
 
 
     </LinearLayout>
