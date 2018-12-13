@@ -28,20 +28,47 @@ public class History extends AppCompatActivity {
         sliderAdapter = new SlideAdapter(this);
         mSlideViewPager.setAdapter(sliderAdapter);
 
-        addDotsIndicator();
+        addDotsIndicator(0);
+
+        mSlideViewPager.addOnPageChangeListener(viewListener);
     }
 
-    public void addDotsIndicator(){
+    public void addDotsIndicator(int position){
 
         mDots = new TextView[3];
+        mDotLayout.removeAllViews();
 
         for(int i = 0; i < mDots.length; i++){
             mDots[i] = new TextView(this);
-            mDots[i].setText(Html.fromHtml("8226;"));
+            mDots[i].setText(Html.fromHtml("•"));
             mDots[i].setTextSize(35);
             mDots[i].setTextColor(getResources().getColor(R.color.colorTransparentWhite));
 
             mDotLayout.addView(mDots[i]);
         }
+
+        if(mDots.length > 0){
+            mDots[position].setTextColor(getResources().getColor(R.color.colorWhite));
+        }
     }
+
+    ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
+        @Override
+        public void onPageScrolled(int i, float v, int i1) {
+
+        }
+
+        @Override
+        public void onPageSelected(int i) {
+
+            addDotsIndicator(i);
+
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int i) {
+
+        }
+    };
+
 }
