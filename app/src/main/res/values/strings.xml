@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Baybayin</string>
+
+    <string-array name="characters">
+        <item>A</item>
+        <item>BA</item>
+        <item>KA</item>
+        <item>DA</item>
+        <item>E</item>
+        <item>GA</item>
+        <item>HA</item>
+        <item>I</item>
+        <item>LA</item>
+        <item>MA</item>
+        <item>NA</item>
+        <item>NGA</item>
+        <item>O</item>
+        <item>PA</item>
+        <item>RA</item>
+        <item>SA</item>
+        <item>TA</item>
+        <item>U</item>
+        <item>WA</item>
+        <item>YA</item>
+    </string-array>
 </resources>

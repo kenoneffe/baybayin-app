@@ -25,7 +25,7 @@
 
 
         <TextView
-            android:id="@+id/identifyBaybayinCharTV"
+            android:id="@+id/slide_char_reading"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="6"
@@ -45,7 +45,7 @@
             android:padding="10dp">
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/slide_option1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="A"
@@ -54,7 +54,7 @@
                 android:layout_marginTop="15dp"/>
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/slide_optiion2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="BA"
@@ -63,7 +63,7 @@
                 android:layout_marginTop="10dp"/>
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/slide_option3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="KA"

@@ -9,20 +9,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="10dp">
 
         <Button
             android:id="@+id/toreadquiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reading Quiz" />
+            android:background="@drawable/mainbtn"
+            android:gravity="center"
+            android:text="Reading Quiz"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Handwriting Quiz" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mainbtn"
+            android:gravity="center"
+            android:text="Handwriting Quiz"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
     </LinearLayout>
+
 </RelativeLayout>
