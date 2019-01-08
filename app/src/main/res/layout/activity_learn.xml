@@ -14,27 +14,32 @@
         <TextView
             android:id="@+id/learnTV"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="BA"
             android:textAlignment="center"
             android:textSize="36sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"/>
 
-        <LinearLayout
+
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:text="Trace the character."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trace the character."
-                android:textAlignment="center"
-                android:textSize="18sp" />
 
-        </LinearLayout>
+        <com.mukesh.DrawingView
+            android:id="@+id/scratch_pad"
+            android:layout_width="match_parent"
+            android:layout_height="332dp"
+            android:layout_above="@+id/buttons"
+            android:layout_margin="20sp"
+            android:background="@color/colorTransparentWhite" />
+
+
     </LinearLayout>
 </RelativeLayout>
