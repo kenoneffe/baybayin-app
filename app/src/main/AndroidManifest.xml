@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".History" />
-        <activity android:name=".Learn" />
         <activity android:name=".Chart" />
         <activity android:name=".Quiz" />
-        <activity android:name=".ReadQuiz"></activity>
+        <activity android:name=".ReadQuiz" />
+        <activity android:name=".Learn"></activity>
     </application>
 
 </manifest>
