@@ -59,7 +59,7 @@ public class Questions {
             //SA
             {"TA", "SA", "HA"},
             //TA
-            {"LA", "YA", "A"},
+            {"LA", "YA", "TA"},
             //U
             {"U", "WA", "GA"},
             //WA

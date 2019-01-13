@@ -52,7 +52,7 @@ public class ReadQuiz extends AppCompatActivity {
                     score.setText("Score: " + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
-                else
+                else if(answer1.getText() != mAnswer)
                 {
                     //INSERT PROMPT MESSAGE: "Incorrect! The correct answer is (answer)"
                     AlertDialog alertDialog = new AlertDialog.Builder(ReadQuiz.this).create();
@@ -73,12 +73,12 @@ public class ReadQuiz extends AppCompatActivity {
         answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(answer1.getText() == mAnswer){
+                if(answer2.getText() == mAnswer){
                     mScore++;
                     score.setText("Score: " + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
-                else
+                else if(answer2.getText() != mAnswer)
                 {
                     //INSERT PROMPT MESSAGE: "Incorrect! The correct answer is (answer)"
                     AlertDialog alertDialog = new AlertDialog.Builder(ReadQuiz.this).create();
@@ -99,12 +99,12 @@ public class ReadQuiz extends AppCompatActivity {
         answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(answer1.getText() == mAnswer){
+                if(answer3.getText() == mAnswer){
                     mScore++;
                     score.setText("Score: " + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
-                else
+                else if(answer3.getText() != mAnswer)
                 {
                     //INSERT PROMPT MESSAGE: "Incorrect! The correct answer is (answer)"
                     AlertDialog alertDialog = new AlertDialog.Builder(ReadQuiz.this).create();

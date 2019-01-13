@@ -20,7 +20,8 @@
         <activity android:name=".Chart" />
         <activity android:name=".Quiz" />
         <activity android:name=".ReadQuiz" />
-        <activity android:name=".Learn"></activity>
+        <activity android:name=".Learn" />
+        <activity android:name=".Result"></activity>
     </application>
 
 </manifest>
