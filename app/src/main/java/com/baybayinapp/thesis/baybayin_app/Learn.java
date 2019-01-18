@@ -1,8 +1,10 @@
 package com.baybayinapp.thesis.baybayin_app;
 
+import android.content.Intent;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.mukesh.DrawingView;
 
@@ -14,6 +16,11 @@ public class Learn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
+
+        Intent intent = getIntent();
+        String text = intent.getStringExtra(Chart.EXTRA_TEXT);
+        TextView learnmainTV = (TextView)findViewById(R.id.learnTV);
+        learnmainTV.setText(text);
 
 
         penColor = ResourcesCompat.getColor(getResources(), R.color.colorBlack, null); //without theme
