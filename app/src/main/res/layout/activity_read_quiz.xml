@@ -17,72 +17,108 @@
             android:id="@+id/identifyCharTV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="14"
+            android:layout_weight="13"
             android:gravity="center"
             android:padding="5dp"
             android:text="Identify the Character"
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
 
         <TextView
             android:id="@+id/score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorTransparentWhite"
+            android:background="@color/buttonPressed"
             android:gravity="center"
             android:text="Score: 0"
-            android:textColor="@color/colorPrimaryDark" />
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparentWhite"
+            android:gravity="center"
+            android:text="00:30"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/quesCharacter"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="6"
+            android:layout_weight="8"
             android:background="@color/colorWhite"
             android:fontFamily="@font/baybayin_clu"
             android:gravity="center"
             android:padding="10dp"
             android:text="A"
-            android:textSize="150sp"
+            android:textSize="175dp"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_weight="10"
-            android:padding="10dp">
+            android:layout_weight="9"
+            android:padding="3dp">
 
-            <Button
-                android:id="@+id/answer1"
+            <RadioGroup
+                android:id="@+id/rbGroup"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/mainbtn"
-                android:text="A"
-                android:textColor="@color/colorWhite" />
+                android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/answer2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/mainbtn"
-                android:text="BA"
-                android:textColor="@color/colorWhite" />
+                <Button
+                    android:id="@+id/answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mainbtn"
+                    android:text="A"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite" />
 
-            <Button
-                android:id="@+id/answer3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/mainbtn"
-                android:text="KA"
-                android:textColor="@color/colorWhite" />
+                <Button
+                    android:id="@+id/answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mainbtn"
+                    android:text="BA"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mainbtn"
+                    android:text="KA"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/buttonConfirmNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mainbtn"
+                    android:text="C O N F I R M"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:textColor="@color/buttonPressed"
+                    android:layout_gravity="center"/>
+
+            </RadioGroup>
+
         </LinearLayout>
 
-
     </LinearLayout>
+
 </RelativeLayout>
