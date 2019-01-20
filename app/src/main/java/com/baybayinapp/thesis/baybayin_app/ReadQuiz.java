@@ -23,7 +23,7 @@ public class ReadQuiz extends AppCompatActivity {
     private TextView textViewScore;
     private TextView textViewTime;
     private RadioGroup rbGroup;
-    private Button bttn1, bttn2, bttn3;
+    private RadioButton bttn1, bttn2, bttn3;
     private Button buttonConfirmNext;
 
     private ColorStateList textColorDefaultRb;

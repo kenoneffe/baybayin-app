@@ -72,48 +72,50 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Button
+                <RadioButton
                     android:id="@+id/answer1"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:background="@drawable/mainbtn"
+                    android:layout_weight="1"
                     android:text="A"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorWhite" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorTransparentWhite"
+                    android:textSize="20sp" />
 
-                <Button
+                <RadioButton
                     android:id="@+id/answer2"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/mainbtn"
+                    android:layout_weight="1"
                     android:text="BA"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorWhite" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorTransparentWhite"
+                    android:textSize="20sp" />
 
-                <Button
+                <RadioButton
                     android:id="@+id/answer3"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/mainbtn"
+                    android:layout_weight="1"
                     android:text="KA"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorWhite" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorTransparentWhite"
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/buttonConfirmNext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/mainbtn"
+                    android:gravity="center"
+                    android:padding="8sp"
                     android:text="C O N F I R M"
-                    android:textStyle="bold"
-                    android:textSize="21sp"
                     android:textColor="@color/buttonPressed"
-                    android:layout_gravity="center"/>
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
             </RadioGroup>
 
