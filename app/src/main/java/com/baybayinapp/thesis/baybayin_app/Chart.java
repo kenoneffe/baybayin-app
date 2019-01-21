@@ -14,6 +14,7 @@ public class Chart extends AppCompatActivity implements View.OnClickListener {
 
     public static final String EXTRA_TEXT = "com.baybayinapp.thesis.baybayin_app.EXTRA_TEXT";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -145,5 +146,14 @@ public class Chart extends AppCompatActivity implements View.OnClickListener {
         intent.putExtra(EXTRA_TEXT, text);
         startActivity(intent);
 
+    }
+
+    public void arrayofGIFs(){
+
+        int[] arrGif ={
+
+
+
+        };
     }
 }

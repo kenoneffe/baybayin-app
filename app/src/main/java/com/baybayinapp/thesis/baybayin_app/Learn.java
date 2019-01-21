@@ -4,9 +4,12 @@ import android.content.Intent;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mukesh.DrawingView;
+
+import pl.droidsonroids.gif.GifImageView;
 
 public class Learn extends AppCompatActivity {
 
@@ -17,11 +20,74 @@ public class Learn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
 
+        GifImageView gifView = findViewById(R.id.gifViewer);
         Intent intent = getIntent();
         String text = intent.getStringExtra(Chart.EXTRA_TEXT);
         TextView learnmainTV = (TextView)findViewById(R.id.learnTV);
         learnmainTV.setText(text);
 
+        switch (text){
+            case "A":
+                gifView.setBackgroundResource(R.drawable.a);
+                break;
+            case "BA":
+                gifView.setBackgroundResource(R.drawable.ba);
+                break;
+            case "KA":
+                gifView.setBackgroundResource(R.drawable.ka);
+                break;
+            case "DA":
+                gifView.setBackgroundResource(R.drawable.da);
+                break;
+            case "E":
+                gifView.setBackgroundResource(R.drawable.e);
+                break;
+            case "GA":
+                gifView.setBackgroundResource(R.drawable.ga);
+                break;
+            case "HA":
+                gifView.setBackgroundResource(R.drawable.ha);
+                break;
+            case "I":
+                gifView.setBackgroundResource(R.drawable.i);
+                break;
+            case "LA":
+                gifView.setBackgroundResource(R.drawable.la);
+                break;
+            case "MA":
+                gifView.setBackgroundResource(R.drawable.ma);
+                break;
+            case "NA":
+                gifView.setBackgroundResource(R.drawable.na);
+                break;
+            case "NGA":
+                gifView.setBackgroundResource(R.drawable.nga);
+                break;
+            case "O":
+                gifView.setBackgroundResource(R.drawable.o);
+                break;
+            case "PA":
+                gifView.setBackgroundResource(R.drawable.pa);
+                break;
+            case "RA":
+                gifView.setBackgroundResource(R.drawable.ra);
+                break;
+            case "SA":
+                gifView.setBackgroundResource(R.drawable.sa);
+                break;
+            case "TA":
+                gifView.setBackgroundResource(R.drawable.ta);
+                break;
+            case "U":
+                gifView.setBackgroundResource(R.drawable.u);
+                break;
+            case "WA":
+                gifView.setBackgroundResource(R.drawable.wa);
+                break;
+            case "YA":
+                gifView.setBackgroundResource(R.drawable.ya);
+                break;
+        }
 
         penColor = ResourcesCompat.getColor(getResources(), R.color.colorBlack, null); //without theme
 
@@ -38,4 +104,6 @@ public class Learn extends AppCompatActivity {
         //drawingView.loadImage(Bitmap bitmap); //Load image (your saved drawing)
         //drawingView.clear(); //clear image
     }
+
+
 }
