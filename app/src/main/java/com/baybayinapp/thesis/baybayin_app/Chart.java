@@ -24,7 +24,6 @@ public class Chart extends AppCompatActivity {
     Context context;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

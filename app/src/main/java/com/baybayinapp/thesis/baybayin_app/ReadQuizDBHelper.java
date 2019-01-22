@@ -48,46 +48,46 @@ public class ReadQuizDBHelper extends SQLiteOpenHelper {
     private void fillQuestionsTable(){
         Questions q1 = new Questions("A", "A", "BA", "KA", 1);
         addQuestion(q1);
-        Questions q2 = new Questions("BA", "DA", "BA", "GA", 2);
+        Questions q2 = new Questions("B", "DA", "BA", "GA", 2);
         addQuestion(q2);
-        Questions q3 = new Questions("KA", "E", "GA", "KA", 3);
+        Questions q3 = new Questions("K", "E", "GA", "KA", 3);
         addQuestion(q3);
-        Questions q4 = new Questions("DA", "DA", "NA", "BA", 1);
+        Questions q4 = new Questions("D", "DA", "NA", "BA", 1);
         addQuestion(q4);
         Questions q5 = new Questions("E", "BA", "E", "A", 2);
         addQuestion(q5);
 
-        Questions q6 = new Questions("GA", "HA", "GA", "PA", 2);
+        Questions q6 = new Questions("G", "HA", "GA", "PA", 2);
         addQuestion(q6);
-        Questions q7 = new Questions("HA", "HA", "A", "I", 1);
+        Questions q7 = new Questions("H", "HA", "A", "I", 1);
         addQuestion(q7);
         Questions q8 = new Questions("I", "LA", "SA", "I", 3);
         addQuestion(q8);
-        Questions q9 = new Questions("LA", "E", "LA", "GA", 2);
+        Questions q9 = new Questions("L", "E", "LA", "GA", 2);
         addQuestion(q9);
-        Questions q10 = new Questions("MA", "A", "KA", "MA", 3);
+        Questions q10 = new Questions("M", "A", "KA", "MA", 3);
         addQuestion(q10);
 
-        Questions q11 = new Questions("NA", "NA", "RA", "WA", 1);
+        Questions q11 = new Questions("N", "NA", "RA", "WA", 1);
         addQuestion(q11);
         Questions q12 = new Questions("NGA", "NA", "LA", "NGA", 3);
         addQuestion(q12);
         Questions q13 = new Questions("O", "O", "I", "U", 1);
         addQuestion(q13);
-        Questions q14 = new Questions("PA", "BA", "PA", "KA", 2);
+        Questions q14 = new Questions("P", "BA", "PA", "KA", 2);
         addQuestion(q14);
-        Questions q15 = new Questions("RA", "RA", "WA", "YA", 1);
+        Questions q15 = new Questions("R", "RA", "WA", "YA", 1);
         addQuestion(q15);
 
-        Questions q16 = new Questions("SA", "TA", "SA", "HA", 2);
+        Questions q16 = new Questions("S", "TA", "SA", "HA", 2);
         addQuestion(q16);
-        Questions q17 = new Questions("TA", "LA", "YA", "TA", 3);
+        Questions q17 = new Questions("T", "LA", "YA", "TA", 3);
         addQuestion(q17);
         Questions q18 = new Questions("U", "U", "WA", "GA", 1);
         addQuestion(q18);
-        Questions q19 = new Questions("WA", "YA", "A", "WA", 3);
+        Questions q19 = new Questions("W", "YA", "A", "WA", 3);
         addQuestion(q19);
-        Questions q20 = new Questions("YA", "SA", "HA", "YA", 3);
+        Questions q20 = new Questions("Y", "SA", "HA", "YA", 3);
         addQuestion(q20);
     }
 
