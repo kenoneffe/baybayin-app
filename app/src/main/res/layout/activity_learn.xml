@@ -46,17 +46,21 @@
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gifViewer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorTransparentWhite" />
+                android:layout_height="match_parent" />
 
-            <com.mukesh.DrawingView
-                android:id="@+id/scratch_pad"
+            <com.raed.drawingview.DrawingView
+                android:id="@+id/drawing_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                />
+                app:brush="pen"
+                app:brush_size="0.4"
+                app:brush_color="@color/colorBlack" />
+
+
+
 
         </FrameLayout>
-`
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

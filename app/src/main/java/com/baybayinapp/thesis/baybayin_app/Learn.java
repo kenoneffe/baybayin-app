@@ -1,6 +1,7 @@
 package com.baybayinapp.thesis.baybayin_app;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,22 +10,30 @@ import android.widget.TextView;
 
 import com.mukesh.DrawingView;
 
+import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
 
 public class Learn extends AppCompatActivity {
 
     int penColor;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
 
-        GifImageView gifView = findViewById(R.id.gifViewer);
+
+        com.raed.drawingview.DrawingView mDrawingView = findViewById(R.id.drawing_view);
+        mDrawingView.setBackgroundColor(Color.TRANSPARENT);
+
+
         Intent intent = getIntent();
         String text = intent.getStringExtra(Chart.EXTRA_TEXT);
         TextView learnmainTV = (TextView)findViewById(R.id.learnTV);
         learnmainTV.setText(text);
+
+        GifImageView gifView = findViewById(R.id.gifViewer);
 
         switch (text){
             case "A":
@@ -89,12 +98,12 @@ public class Learn extends AppCompatActivity {
                 break;
         }
 
-        penColor = ResourcesCompat.getColor(getResources(), R.color.colorBlack, null); //without theme
+        //penColor = ResourcesCompat.getColor(getResources(), R.color.colorBlack, null); //without theme
 
-        DrawingView drawingView = (DrawingView) findViewById(R.id.scratch_pad);
+        /*DrawingView drawingView = (DrawingView) findViewById(R.id.scratch_pad);
         drawingView.initializePen(); //To use the pen mode to draw on the screen
         drawingView.setPenSize(30); //To set the size of the pen
-        drawingView.setPenColor(penColor); //To set the color of the pen
+        drawingView.setPenColor(penColor); //To set the color of the pen*/
 
         //ERASER
         //drawingView.initializeEraser(); //To use the eraser mode to clear the screen
