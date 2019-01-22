@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Learn">
+
+    <TextView
+        android:id="@+id/learnTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="BA"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trace the character."
+        android:textAlignment="center"
+        android:textSize="18sp"
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="@color/colorTransparentWhite">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifViewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.raed.drawingview.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:brush="pen"
+            app:brush_color="@color/colorBlack"
+            app:brush_size="0.4" />
+
+
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp">
 
-        <TextView
-            android:id="@+id/learnTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BA"
-            android:textAlignment="center"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:layout_marginTop="20sp"/>
-
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Trace the character."
-            android:textAlignment="center"
-            android:textSize="18sp"
-
-            />
-
-
-        <FrameLayout
+        <Button
+            android:id="@+id/clrbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20sp"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp"
-            android:layout_marginBottom="150dp"
-            android:background="@color/colorTransparentWhite">
+            android:layout_weight="1"
+            android:text="CLEAR" />
 
-
-            <pl.droidsonroids.gif.GifImageView
-                android:id="@+id/gifViewer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <com.raed.drawingview.DrawingView
-                android:id="@+id/drawing_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:brush="pen"
-                app:brush_size="0.4"
-                app:brush_color="@color/colorBlack" />
-
-
-
-
-        </FrameLayout>
-
-        <LinearLayout
+        <Button
+            android:id="@+id/undobtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:text="undo" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="CLEAR" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="SAVE" />
-        </LinearLayout>
-
+        <Button
+            android:id="@+id/svbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SAVE" />
 
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

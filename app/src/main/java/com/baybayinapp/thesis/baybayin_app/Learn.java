@@ -1,14 +1,17 @@
 package com.baybayinapp.thesis.baybayin_app;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.mukesh.DrawingView;
+import com.raed.drawingview.DrawingView;
 
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
@@ -18,15 +21,40 @@ public class Learn extends AppCompatActivity {
     int penColor;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
 
+        final DrawingView mDrawingView = findViewById(R.id.drawing_view);
+        mDrawingView.setDrawingBackground(Color.TRANSPARENT);
+        mDrawingView.setUndoAndRedoEnable(true);
+        Button clrBTN = (Button) findViewById(R.id.clrbtn);
+        clrBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        com.raed.drawingview.DrawingView mDrawingView = findViewById(R.id.drawing_view);
-        mDrawingView.setBackgroundColor(Color.TRANSPARENT);
+                mDrawingView.clear();
 
+            }
+        });
+        final Button undoBTN =  (Button) findViewById(R.id.undobtn);
+        undoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDrawingView.undo();
+                undoBTN.setEnabled(!mDrawingView.isUndoStackEmpty());
+                undoBTN.setEnabled(!mDrawingView.isRedoStackEmpty());
+            }
+        });
+        Button svBTN =  (Button)  findViewById(R.id.svbtn);
+        svBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bitmap bitmap = mDrawingView.exportDrawingWithoutBackground();
+            }
+        });
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(Chart.EXTRA_TEXT);
@@ -97,6 +125,10 @@ public class Learn extends AppCompatActivity {
                 gifView.setBackgroundResource(R.drawable.ya);
                 break;
         }
+
+
+
+
 
         //penColor = ResourcesCompat.getColor(getResources(), R.color.colorBlack, null); //without theme
 
