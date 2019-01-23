@@ -3,31 +3,33 @@ package com.baybayinapp.thesis.baybayin_app;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.support.v4.content.res.ResourcesCompat;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.raed.drawingview.DrawingView;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Random;
 
-import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
 
 public class Learn extends AppCompatActivity {
 
     int penColor;
 
-
+    DrawingView mDrawingView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
 
-        final DrawingView mDrawingView = findViewById(R.id.drawing_view);
+        mDrawingView = findViewById(R.id.drawing_view);
         mDrawingView.setDrawingBackground(Color.TRANSPARENT);
         mDrawingView.setUndoAndRedoEnable(true);
         Button clrBTN = (Button) findViewById(R.id.clrbtn);
@@ -52,7 +54,31 @@ public class Learn extends AppCompatActivity {
         svBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Bitmap bitmap = mDrawingView.exportDrawingWithoutBackground();
+
+
+                mDrawingView.setDrawingBackground(getResources().getColor(R.color.colorWhite));
+                String root = Environment.getExternalStorageDirectory().toString();
+                File myDir = new File(root + "/req_images");
+                myDir.mkdirs();
+                Random generator = new Random();
+                int n = 10000;
+                n = generator.nextInt(n);
+                String fname = "Image-" + n + ".jpg";
+                File file = new File(myDir, fname);
+                if (file.exists())
+                    file.delete();
+                try {
+                    FileOutputStream out = new FileOutputStream(file);
+                    Bitmap bitmap = mDrawingView.exportDrawing();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
+                    mDrawingView.setDrawingBackground(Color.TRANSPARENT);
+                    out.flush();
+                    out.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
             }
         });
 
@@ -145,6 +171,7 @@ public class Learn extends AppCompatActivity {
         //drawingView.loadImage(Bitmap bitmap); //Load image (your saved drawing)
         //drawingView.clear(); //clear image
     }
+
 
 
 }
