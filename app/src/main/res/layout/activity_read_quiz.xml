@@ -19,11 +19,12 @@
             android:layout_height="match_parent"
             android:layout_weight="13"
             android:gravity="center"
-            android:padding="5dp"
+            android:padding="0dp"
             android:text="Identify the Character"
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:freezesText="true"/>
 
 
         <TextView
@@ -34,7 +35,8 @@
             android:gravity="center"
             android:text="Score: 0"
             android:textSize="20sp"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorWhite"
+            android:freezesText="true"/>
 
         <TextView
             android:id="@+id/time"
@@ -45,7 +47,8 @@
             android:text="00:30"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:freezesText="true"/>
 
         <TextView
             android:id="@+id/quesCharacter"
@@ -54,29 +57,33 @@
             android:layout_weight="8"
             android:background="@color/colorWhite"
             android:fontFamily="@font/baybayin_clu"
+            android:freezesText="true"
             android:gravity="center"
-            android:padding="10dp"
+            android:padding="0dp"
             android:text="A"
-            android:textSize="175dp"
+            android:textSize="160dp"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_marginTop="5dp"
             android:layout_weight="9"
+            android:orientation="vertical"
             android:padding="3dp">
 
             <RadioGroup
                 android:id="@+id/rbGroup"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
 
                 <RadioButton
                     android:id="@+id/answer1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:freezesText="true"
                     android:text="A"
                     android:textAppearance="@style/TextAppearance.AppCompat.Button"
                     android:textColor="@color/colorTransparentWhite"
@@ -87,6 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:freezesText="true"
                     android:text="BA"
                     android:textAppearance="@style/TextAppearance.AppCompat.Button"
                     android:textColor="@color/colorTransparentWhite"
@@ -97,6 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:freezesText="true"
                     android:text="KA"
                     android:textAppearance="@style/TextAppearance.AppCompat.Button"
                     android:textColor="@color/colorTransparentWhite"
@@ -110,6 +119,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/mainbtn"
+                    android:freezesText="true"
                     android:gravity="center"
                     android:padding="8sp"
                     android:text="C O N F I R M"

@@ -1,6 +1,9 @@
 package com.baybayinapp.thesis.baybayin_app;
 
-public class Questions {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Questions implements Parcelable {
 
     private String question;
     private String answer1, answer2, answer3;
@@ -16,6 +19,40 @@ public class Questions {
         this.answer3 = answer3;
         this.answerNr = answerNr;
     }
+
+    protected Questions(Parcel in) {
+        question = in.readString();
+        answer1 = in.readString();
+        answer2 = in.readString();
+        answer3 = in.readString();
+        answerNr = in.readInt();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(question);
+        dest.writeString(answer1);
+        dest.writeString(answer2);
+        dest.writeString(answer3);
+        dest.writeInt(answerNr);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<Questions> CREATOR = new Creator<Questions>() {
+        @Override
+        public Questions createFromParcel(Parcel in) {
+            return new Questions(in);
+        }
+
+        @Override
+        public Questions[] newArray(int size) {
+            return new Questions[size];
+        }
+    };
 
     public String getQuestion() {
         return question;
