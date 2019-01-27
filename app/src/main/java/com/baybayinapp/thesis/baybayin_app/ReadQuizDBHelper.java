@@ -68,9 +68,9 @@ public class ReadQuizDBHelper extends SQLiteOpenHelper {
         Questions q10 = new Questions("M", "A", "KA", "MA", 3);
         addQuestion(q10);
 
-        Questions q11 = new Questions("N", "NA", "RA", "WA", 1);
+        Questions q11 = new Questions("N", "NA", "NGA", "WA", 2);
         addQuestion(q11);
-        Questions q12 = new Questions("NGA", "NA", "LA", "NGA", 3);
+        Questions q12 = new Questions("ᜈ", "NA", "LA", "NGA", 1);
         addQuestion(q12);
         Questions q13 = new Questions("O", "O", "I", "U", 1);
         addQuestion(q13);

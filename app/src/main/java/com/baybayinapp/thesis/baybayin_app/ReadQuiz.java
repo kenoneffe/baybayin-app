@@ -25,6 +25,7 @@ import java.util.Random;
 
 public class ReadQuiz extends AppCompatActivity {
 
+    //public static final String EXTRA_NUMBER = "com.baybayinapp.thesis.baybayin_app.EXTRA_NUMBER";
     public static final String EXTRA_SCORE = "extraScore";
     private static final long COUNTDOWN_IN_MILLIS = 30000;
     private static final String KEY_SCORE = "keyScore";
@@ -36,7 +37,7 @@ public class ReadQuiz extends AppCompatActivity {
     private TextView textViewQuestion;
     private TextView textViewScore;
     private TextView textViewTime;
-    private RadioGroup rbGroup;
+    private RadioGroup rbGrp;
     private RadioButton bttn1, bttn2, bttn3;
     private Button buttonConfirmNext;
 
@@ -65,6 +66,7 @@ public class ReadQuiz extends AppCompatActivity {
         textViewScore = findViewById(R.id.score);
         textViewTime = findViewById(R.id.time);
 
+        rbGrp = findViewById(R.id.rbGroup);
         bttn1 = findViewById(R.id.answer1);
         bttn2 = findViewById(R.id.answer2);
         bttn3 = findViewById(R.id.answer3);
@@ -73,7 +75,6 @@ public class ReadQuiz extends AppCompatActivity {
         textColorDefaultRb = bttn1.getTextColors();
         textColorDefaultCd = textViewTime.getTextColors();
 
-        if(savedInstanceState == null) {
             ReadQuizDBHelper dbHelper = new ReadQuizDBHelper(this);
             questionsList = dbHelper.getAllQuestions();
             questionCountTotal = questionsList.size();
@@ -98,33 +99,13 @@ public class ReadQuiz extends AppCompatActivity {
                     }
                 }
             });
-        }
-        else
-        {
-            questionsList = savedInstanceState.getParcelableArrayList(KEY_QUESTION_LIST);
-            questionCountTotal = questionsList.size();
-            questionCounter = savedInstanceState.getInt(KEY_QUESTION_COUNT);
-            currentQuestion = questionsList.get(questionCounter - 1);
-            score = savedInstanceState.getInt(KEY_SCORE);
-            timeLeftInMillis = savedInstanceState.getLong(KEY_MILLIS_LEFT);
-            answered = savedInstanceState.getBoolean(KEY_ANSWERED);
-
-            if(!answered){
-                startCountDowm();
-            }
-            else
-            {
-                updateCountDownText();
-                showSolution();
-            }
-        }
-
     }
 
     private void showNextQuestion(){
         bttn1.setTextColor(textColorDefaultRb);
         bttn2.setTextColor(textColorDefaultRb);
         bttn3.setTextColor(textColorDefaultRb);
+        rbGrp.clearCheck();
 
         if(questionCounter < questionCountTotal){
             currentQuestion = questionsList.get(questionCounter);
@@ -184,8 +165,8 @@ public class ReadQuiz extends AppCompatActivity {
 
         countDownTimer.cancel();
 
-        RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
-        int answerNr = rbGroup.indexOfChild(rbSelected) + 1;
+        RadioButton rbSelected = findViewById(rbGrp.getCheckedRadioButtonId());
+        int answerNr = rbGrp.indexOfChild(rbSelected) + 1;
 
         if (answerNr == currentQuestion.getAnswerNr()){
             score++;
@@ -203,15 +184,12 @@ public class ReadQuiz extends AppCompatActivity {
         switch (currentQuestion.getAnswerNr()){
             case 1:
                 bttn1.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer 1 is correct!");
                 break;
             case 2:
                 bttn2.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer 2 is correct!");
                 break;
             case 3:
                 bttn3.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer 3 is correct!");
                 break;
         }
         if (questionCounter < questionCountTotal){
@@ -219,13 +197,29 @@ public class ReadQuiz extends AppCompatActivity {
         }
         else {
             buttonConfirmNext.setText("F I N I S H");
+            Button button = (Button) findViewById(R.id.buttonConfirmNext);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openResultsActivity();
+                }
+            });
         }
+    }
+    public void openResultsActivity(){
+        //TextView textResult = (TextView) findViewById(R.id.score);
+        //int number = Integer.parseInt(textResult.getText().toString());
+
+        Intent intent = new Intent(this, Result.class);
+        //intent.putExtra(EXTRA_NUMBER, number);
+
+        startActivity(intent);
     }
 
     private void finishQuiz(){
-        Intent resultIntent = new Intent();
-        resultIntent.putExtra(EXTRA_SCORE, score);
-        setResult(RESULT_OK, resultIntent);
+        //Intent resultIntent = new Intent();
+        //resultIntent.putExtra(EXTRA_SCORE, score);
+        //setResult(RESULT_OK, resultIntent);
         finish();
     }
 
