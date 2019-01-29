@@ -25,8 +25,7 @@ import java.util.Random;
 
 public class ReadQuiz extends AppCompatActivity {
 
-    //public static final String EXTRA_NUMBER = "com.baybayinapp.thesis.baybayin_app.EXTRA_NUMBER";
-    public static final String EXTRA_SCORE = "extraScore";
+    public static final String EXTRA_SCORE = "com.baybayinapp.thesis.baybayin_app.extraScore";
     private static final long COUNTDOWN_IN_MILLIS = 30000;
     private static final String KEY_SCORE = "keyScore";
     private static final String KEY_QUESTION_COUNT = "keyQuestionCount";
@@ -197,7 +196,7 @@ public class ReadQuiz extends AppCompatActivity {
         }
         else {
             buttonConfirmNext.setText("F I N I S H");
-            Button button = (Button) findViewById(R.id.buttonConfirmNext);
+            Button button = findViewById(R.id.buttonConfirmNext);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -207,19 +206,19 @@ public class ReadQuiz extends AppCompatActivity {
         }
     }
     public void openResultsActivity(){
-        //TextView textResult = (TextView) findViewById(R.id.score);
-        //int number = Integer.parseInt(textResult.getText().toString());
 
-        Intent intent = new Intent(this, Result.class);
-        //intent.putExtra(EXTRA_NUMBER, number);
+        TextView textView1 = (TextView) findViewById(R.id.score);
+        int number = Integer.parseInt(textView1.getText().toString());
 
+        Intent intent = new Intent(ReadQuiz.this, Result.class);
+        intent.putExtra(EXTRA_SCORE, number);
         startActivity(intent);
     }
 
     private void finishQuiz(){
-        //Intent resultIntent = new Intent();
-        //resultIntent.putExtra(EXTRA_SCORE, score);
-        //setResult(RESULT_OK, resultIntent);
+        Intent resultIntent = new Intent();
+        resultIntent.putExtra(EXTRA_SCORE, score);
+        setResult(RESULT_OK, resultIntent);
         finish();
     }
 
