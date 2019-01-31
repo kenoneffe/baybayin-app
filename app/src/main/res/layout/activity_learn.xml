@@ -38,19 +38,27 @@
         android:background="@color/colorTransparentWhite">
 
 
-        <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/gifViewer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <com.raed.drawingview.DrawingView
-            android:id="@+id/drawing_view"
+        <android.gesture.GestureOverlayView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:brush="pen"
-            app:brush_color="@color/colorBlack"
-            app:brush_size="0.4" />
+            android:id="@+id/gesture"
+            android:gestureStrokeWidth="60"
+            android:gestureColor="@color/colorBlack">
 
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifViewer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/js"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="JusaneSmall"
+                android:textSize="50sp"/>
+
+        </android.gesture.GestureOverlayView>
 
     </FrameLayout>
 

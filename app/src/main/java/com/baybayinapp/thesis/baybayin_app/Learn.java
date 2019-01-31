@@ -1,6 +1,12 @@
 package com.baybayinapp.thesis.baybayin_app;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.gesture.Gesture;
+import android.gesture.GestureLibraries;
+import android.gesture.GestureLibrary;
+import android.gesture.GestureOverlayView;
+import android.gesture.Prediction;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Environment;
@@ -14,22 +20,52 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Random;
+
 
 import pl.droidsonroids.gif.GifImageView;
 
 public class Learn extends AppCompatActivity {
 
-    int penColor;
+    /*int penColor;
 
-    DrawingView mDrawingView;
+    DrawingView mDrawingView;*/
+    GestureLibrary lib;
+    TextView txtResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
 
-        mDrawingView = findViewById(R.id.drawing_view);
+        txtResult = findViewById(R.id.js);
+
+
+        lib = GestureLibraries.fromRawResource(this,R.raw.gestures);
+        if(!lib.load())
+            finish();
+            GestureOverlayView gesture = findViewById(R.id.gesture);
+            gesture.addOnGesturePerformedListener(new GestureOverlayView.OnGesturePerformedListener() {
+                @Override
+                public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
+                    ArrayList<Prediction> predictionArrayList = lib.recognize(gesture);
+                    for(Prediction prediction:predictionArrayList){
+
+                        if(prediction.score>1.0)
+                            txtResult.setText(prediction.name);
+
+                    }
+                }
+            });
+
+
+
+
+
+
+        /*mDrawingView = findViewById(R.id.drawing_view);
         mDrawingView.setDrawingBackground(Color.TRANSPARENT);
         mDrawingView.setUndoAndRedoEnable(true);
         Button clrBTN = (Button) findViewById(R.id.clrbtn);
@@ -80,7 +116,7 @@ public class Learn extends AppCompatActivity {
 
 
             }
-        });
+        });*/
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(Chart.EXTRA_TEXT);
