@@ -14,7 +14,6 @@ public class Chart extends AppCompatActivity implements View.OnClickListener {
 
     public static final String EXTRA_TEXT = "com.baybayinapp.thesis.baybayin_app.EXTRA_TEXT";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

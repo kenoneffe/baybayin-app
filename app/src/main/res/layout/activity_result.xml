@@ -39,12 +39,14 @@
         android:textSize="20sp" />
 
     <Button
+        android:id="@+id/returnBtn"
         android:layout_width="140dp"
         android:layout_height="50dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/mainbtn"
-        android:text="Return"
+        android:text="R E T U R N"
         android:textColor="@color/colorWhite"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
