@@ -43,10 +43,14 @@ public class Learn extends AppCompatActivity {
         txtResult = findViewById(R.id.js);
 
 
+
+
         lib = GestureLibraries.fromRawResource(this,R.raw.gestures);
         if(!lib.load())
             finish();
             GestureOverlayView gesture = findViewById(R.id.gesture);
+            gesture.setGestureStrokeType(GestureOverlayView.GESTURE_STROKE_TYPE_MULTIPLE);
+            gesture.setGestureStrokeAngleThreshold( 90.0f);
             gesture.addOnGesturePerformedListener(new GestureOverlayView.OnGesturePerformedListener() {
                 @Override
                 public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {

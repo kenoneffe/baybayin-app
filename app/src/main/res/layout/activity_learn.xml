@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/gesture"
-            android:gestureStrokeWidth="60"
+            android:gestureStrokeWidth="20"
             android:gestureColor="@color/colorBlack">
 
             <pl.droidsonroids.gif.GifImageView
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="JusaneSmall"
+                android:text="Stroke"
                 android:textSize="50sp"/>
 
         </android.gesture.GestureOverlayView>
