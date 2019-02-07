@@ -21,22 +21,29 @@ public class SlideAdapter extends PagerAdapter {
     //Arrays
     public int[] slide_images = {
 
+            R.drawable.blocks,
+            R.drawable.dictionary,
+            R.drawable.contract,
             R.drawable.india,
-            R.drawable.old_paper,
-            R.drawable.shell
+            //R.drawable.old_paper,
+            //R.drawable.shell
     };
 
     public String[] slide_headings = {
-            "BRAHMIC FAMILY",
-            "ANCIENT SCRIPT",
-            "GIANT CLAM"
+
+            "ALIBATA",
+            "MADJAPAHIT",
+            "PATINIG AT KATINIG",
+            "PANGSULAT",
+            //"ANCIENT SCRIPT",
+            //"GIANT CLAM"
     };
 
     public String[] slide_descs = {
-            "Paul Morrow of The Filipino Express (2017) explored some of the claims that Baybayin, our ancient script known to be developed from the Brahmic script of India, possessed a meaning beyond its actual function. It is a pre-Spanish Philippine writing system. It is a member of the Brahmic family and is recorded as being in use in the 16th century.",
-            "Description",
-            "Description"
-
+            "Ito ang kinikilalang unang sistema ng pagsulat ng mga Pilipino. Mula sa Alifabata ng Arabia na nang lumaon ay naging ALIBATA.",
+            "Nakaabot sa Pilipinas sa daang India, Java, Sumatra, Borneo at Malaya. Pinaniniwalaang pumasok ito nang maitatag ang emperyo ng Madjapahit sa Java.",
+            "Binubuo ito ng tatlong (3) patinig: a, e / i at o / u. Mayroon din itong labinlimang (15) katinig: ba, ka, da, ga, ha, la, ma, na, nga, pa, sa, ta, wa at ya.",
+            "Karaniwang sulatan ng mga sinaunang Pilipino ang mga dahon, murang kawayan, balat ng kahoy o puno at tanso."
     };
 
     @Override
