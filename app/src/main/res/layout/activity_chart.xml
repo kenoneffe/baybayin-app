@@ -16,7 +16,8 @@
         android:layout_marginRight="2dp"
         android:layout_marginBottom="2dp"
         android:orientation="vertical"
-        android:weightSum="50">
+        android:weightSum="50"
+        android:background="@color/colorWhite">
 
 
         <LinearLayout
@@ -37,13 +38,13 @@
                 <Button
                     android:id="@+id/btnA"
                     android:layout_width="wrap_content"
-                    android:layout_height="71dp"
+                    android:layout_height="58dp"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="A"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -69,10 +70,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="B"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -98,10 +99,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="K"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -127,10 +128,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="D"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -152,7 +153,8 @@
             android:layout_margin="5dp"
             android:layout_weight="10"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="4"
+            android:background="@color/colorWhite">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -167,10 +169,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="E"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -197,10 +199,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="G"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -226,10 +228,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="H"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -255,10 +257,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="I"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -281,7 +283,8 @@
             android:layout_margin="5dp"
             android:layout_weight="10"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="4"
+            android:background="@color/colorWhite">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -296,10 +299,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="L"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -326,10 +329,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="M"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -355,10 +358,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="ᜈ"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -384,10 +387,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="N"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -409,7 +412,8 @@
             android:layout_margin="5dp"
             android:layout_weight="10"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="4"
+            android:background="@color/colorWhite">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -424,10 +428,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="O"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -453,10 +457,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="P"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -482,10 +486,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="R"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -510,10 +514,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="S"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -533,8 +537,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:layout_weight="10
-"
+            android:layout_weight="10"
+            android:background="@color/colorWhite"
             android:orientation="horizontal"
             android:weightSum="4">
 
@@ -551,10 +555,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="T"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/buttonPressed"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -580,10 +584,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="U"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/buttonPressed"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -609,10 +613,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="W"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/buttonPressed"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 
@@ -638,10 +642,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
-                    android:background="@drawable/mainbtn"
+                    android:background="@color/colorWhite"
                     android:fontFamily="@font/baybayin_clu"
                     android:text="Y"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/buttonPressed"
                     android:textSize="50dp"
                     android:textStyle="bold" />
 

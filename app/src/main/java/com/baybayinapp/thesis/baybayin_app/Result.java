@@ -26,18 +26,29 @@ public class Result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        //resultLabel = findViewById(R.id.totalScore);
+        //loadHighScore();
+
         Intent intent = getIntent();
-        int number = intent.getIntExtra(ReadQuiz.EXTRA_SCORE, 0);
+        String number = intent.getStringExtra(ReadQuiz.EXTRA_SCORE);
 
-        TextView textView1 = (TextView) findViewById(R.id.score);
+        TextView textView2 = (TextView) findViewById(R.id.totalScore);
+        textView2.setText(number);
 
-        textView1.setText("" + number);
+        Button returnReadQuiz = findViewById(R.id.returnBtn);
+        returnReadQuiz.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openReadQuiz();
+            }
+        });
     }
+
     public void openReadQuiz(){
-        Intent intent = new Intent (Result.this, ReadQuiz.class);
-        startActivity(intent);
+        Intent intent = new Intent (Result.this, MainActivity.class);
+        startActivityForResult(intent, REQUEST_CODE_QUIZ);
     }
-
+/*
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -56,15 +67,15 @@ public class Result extends AppCompatActivity {
     {
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         highscore = prefs.getInt(KEY_HIGHSCORE, 0);
-        resultLabel.setText("Highscore: " + highscore);
+        resultLabel.setText("Total Score: " + score);
     }
-    private void updateHighScore(int newHighscore){
-        highscore = newHighscore;
-        resultLabel.setText("Highscore: " + highscore);
+    private void updateHighScore(int highscoreNew){
+        highscore = highscoreNew;
+        resultLabel.setText("Total Score: " + score);
 
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putInt(KEY_HIGHSCORE, highscore);
         editor.apply();
-    }
+    }*/
 }

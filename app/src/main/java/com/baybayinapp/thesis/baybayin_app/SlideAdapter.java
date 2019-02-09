@@ -21,12 +21,10 @@ public class SlideAdapter extends PagerAdapter {
     //Arrays
     public int[] slide_images = {
 
-            R.drawable.blocks,
-            R.drawable.dictionary,
             R.drawable.contract,
-            R.drawable.india,
-            //R.drawable.old_paper,
-            //R.drawable.shell
+            R.drawable.empire,
+            R.drawable.blocks,
+            R.drawable.bamboo,
     };
 
     public String[] slide_headings = {
@@ -34,9 +32,7 @@ public class SlideAdapter extends PagerAdapter {
             "ALIBATA",
             "MADJAPAHIT",
             "PATINIG AT KATINIG",
-            "PANGSULAT",
-            //"ANCIENT SCRIPT",
-            //"GIANT CLAM"
+            "PANGSULAT"
     };
 
     public String[] slide_descs = {
