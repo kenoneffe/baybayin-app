@@ -15,10 +15,10 @@ import org.w3c.dom.Text;
 public class Chart extends AppCompatActivity {
 
     private Button  aBTN,baBTN,kaBTN,daBTN,
-                    eBTN,gaBTN,haBTN,iBTN,
-                    laBTN,maBTN,naBTN,ngaBTN,
-                    oBTN,paBTN,raBTN,saBTN,
-                    taBTN,uBTN,waBTN,yaBTN;
+            eBTN,gaBTN,haBTN,
+            laBTN,maBTN,naBTN,ngaBTN,
+            oBTN,paBTN,saBTN,
+            taBTN,waBTN,yaBTN;
 
 
     Context context;
@@ -108,16 +108,6 @@ public class Chart extends AppCompatActivity {
             }
         });
 
-        iBTN = findViewById(R.id.btnI);
-        iBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                opentoLearn();
-
-            }
-        });
-
         laBTN = findViewById(R.id.btnLA);
         laBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -178,16 +168,6 @@ public class Chart extends AppCompatActivity {
             }
         });
 
-        raBTN = findViewById(R.id.btnRA);
-        raBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                opentoLearn();
-
-            }
-        });
-
         saBTN = findViewById(R.id.btnSA);
         saBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -200,16 +180,6 @@ public class Chart extends AppCompatActivity {
 
         taBTN = findViewById(R.id.btnTA);
         taBTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                opentoLearn();
-
-            }
-        });
-
-        uBTN =findViewById(R.id.btnU);
-        uBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -238,10 +208,7 @@ public class Chart extends AppCompatActivity {
             }
         });
 
-
-
     }
-
     public void opentoLearn(){
 
         Intent intent = new Intent(this , Learn.class);

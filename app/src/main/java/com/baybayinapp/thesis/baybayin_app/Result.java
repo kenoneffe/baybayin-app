@@ -48,34 +48,4 @@ public class Result extends AppCompatActivity {
         Intent intent = new Intent (Result.this, MainActivity.class);
         startActivityForResult(intent, REQUEST_CODE_QUIZ);
     }
-/*
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == REQUEST_CODE_QUIZ){
-            if(resultCode == RESULT_OK){
-                int score = data.getIntExtra(ReadQuiz.EXTRA_SCORE, 0);
-                if(score > highscore){
-                    updateHighScore(score);
-                }
-            }
-        }
-    }
-
-    private void loadHighScore()
-    {
-        SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
-        highscore = prefs.getInt(KEY_HIGHSCORE, 0);
-        resultLabel.setText("Total Score: " + score);
-    }
-    private void updateHighScore(int highscoreNew){
-        highscore = highscoreNew;
-        resultLabel.setText("Total Score: " + score);
-
-        SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putInt(KEY_HIGHSCORE, highscore);
-        editor.apply();
-    }*/
 }
