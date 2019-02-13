@@ -23,9 +23,6 @@ public class HandwritingQuiz extends AppCompatActivity {
 
     DrawingView hwqDrawingView;
 
-    Bitmap image;
-    private TessBaseAPI mTess;
-    String datapath = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,12 +59,17 @@ public class HandwritingQuiz extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Bitmap bitmap = hwqDrawingView.exportDrawing();
+                String OCRresult = null;
+                hwqDrawingView = (DrawingView) findViewById(R.id.handQ_drawing_view);
+
+                Bitmap bitmap =  hwqDrawingView.exportDrawing();
 
                 OcrManager manager = new OcrManager();
                 manager.initAPI();
                 manager.startRecognize(bitmap);
-
+                OCRresult = manager.startRecognize(bitmap);
+                TextView tv_OCR_Result = (TextView) findViewById(R.id.learnTVHQ);
+                tv_OCR_Result.setText(OCRresult);
 
 
 
