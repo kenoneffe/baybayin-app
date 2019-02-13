@@ -1,45 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Learn">
+
+    <TextView
+        android:id="@+id/learnTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="BA"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trace the character."
+        android:textAlignment="center"
+        android:textSize="18sp"
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="@color/colorTransparentWhite">
+
+
+        <android.gesture.GestureOverlayView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gesture"
+            android:gestureStrokeWidth="20"
+            android:gestureColor="@color/colorBlack">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifViewer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/js"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Stroke"
+                android:textSize="50sp"/>
+
+        </android.gesture.GestureOverlayView>
+
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp">
 
-        <TextView
-            android:id="@+id/learnTV"
+        <Button
+            android:id="@+id/clrbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BA"
-            android:textAlignment="center"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:layout_marginTop="20sp"/>
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CLEAR" />
 
-
-        <TextView
-            android:id="@+id/textView5"
+        <Button
+            android:id="@+id/undobtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Trace the character."
-            android:textAlignment="center"
-            android:textSize="18sp"
-            />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="undo" />
 
-
-        <com.mukesh.DrawingView
-            android:id="@+id/scratch_pad"
+        <Button
+            android:id="@+id/svbtn"
             android:layout_width="match_parent"
-            android:layout_height="332dp"
-            android:layout_above="@+id/buttons"
-            android:layout_margin="20sp"
-            android:background="@color/colorTransparentWhite" />
-
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SAVE" />
 
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
