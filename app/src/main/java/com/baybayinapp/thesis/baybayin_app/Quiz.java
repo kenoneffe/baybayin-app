@@ -2,12 +2,15 @@ package com.baybayinapp.thesis.baybayin_app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.raed.drawingview.DrawingView;
 
 public class Quiz extends AppCompatActivity {
     private static final int REQUEST_CODE_QUIZ = 1;
@@ -19,7 +22,8 @@ public class Quiz extends AppCompatActivity {
 
     private int highscore;
 
-    Button toReadQuiz;
+    Button toReadQuiz,tohandwritingQ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,21 @@ public class Quiz extends AppCompatActivity {
         //textViewHighScore = findViewById(R.id.text_view_highscore)
         //loadHighScore();
 
+        //handwritingquiz
+
+        tohandwritingQ = findViewById(R.id.tohandWQ);
+        tohandwritingQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                gotoHandWQ();
+
+            }
+        });
+
+
+
+
         //reading quiz
         toReadQuiz = findViewById(R.id.toreadquiz);
         toReadQuiz.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +56,14 @@ public class Quiz extends AppCompatActivity {
                 gotoReadQuiz();
             }
         });
+    }
+
+
+    public void gotoHandWQ(){
+
+        Intent intent = new Intent(this, HandwritingQuiz.class);
+        startActivity(intent);
+
     }
 
     public void gotoReadQuiz(){

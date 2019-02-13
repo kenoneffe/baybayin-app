@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Learn">
+    tools:context=".HandwritingQuiz">
 
     <TextView
-        android:id="@+id/learnTV"
+        android:id="@+id/learnTVHQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
@@ -18,10 +18,10 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/writeCCTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Trace the character."
+        android:text="Write the correct character."
         android:textAlignment="center"
         android:textSize="18sp"
 
@@ -39,14 +39,8 @@
 
 
 
-
-            <pl.droidsonroids.gif.GifImageView
-                android:id="@+id/gifViewer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
         <com.raed.drawingview.DrawingView
-            android:id="@+id/drawing_view"
+            android:id="@+id/handQ_drawing_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:brush="calligraphy"
@@ -66,25 +60,25 @@
         android:layout_marginLeft="20sp">
 
         <Button
-            android:id="@+id/clrbtn"
+            android:id="@+id/clrbtnHQ"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="CLEAR" />
 
         <Button
-            android:id="@+id/undobtn"
+            android:id="@+id/undobtnHQ"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="undo" />
 
         <Button
-            android:id="@+id/svbtn"
+            android:id="@+id/submitHQ"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="SAVE" />
+            android:text="SUBMIT" />
 
     </LinearLayout>
 </LinearLayout>

@@ -1,12 +1,6 @@
 package com.baybayinapp.thesis.baybayin_app;
 
 import android.content.Intent;
-import android.content.res.Resources;
-import android.gesture.Gesture;
-import android.gesture.GestureLibraries;
-import android.gesture.GestureLibrary;
-import android.gesture.GestureOverlayView;
-import android.gesture.Prediction;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Environment;
@@ -17,59 +11,22 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.raed.drawingview.DrawingView;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.Random;
-
 
 import pl.droidsonroids.gif.GifImageView;
 
 public class Learn extends AppCompatActivity {
 
-    /*int penColor;
 
-    DrawingView mDrawingView;*/
-    GestureLibrary lib;
-    TextView txtResult;
+    DrawingView mDrawingView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
 
-        txtResult = findViewById(R.id.js);
-
-
-
-
-        lib = GestureLibraries.fromRawResource(this,R.raw.gestures);
-        if(!lib.load())
-            finish();
-            GestureOverlayView gesture = findViewById(R.id.gesture);
-            gesture.setGestureStrokeType(GestureOverlayView.GESTURE_STROKE_TYPE_MULTIPLE);
-            gesture.setGestureStrokeAngleThreshold( 90.0f);
-            gesture.addOnGesturePerformedListener(new GestureOverlayView.OnGesturePerformedListener() {
-                @Override
-                public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
-                    ArrayList<Prediction> predictionArrayList = lib.recognize(gesture);
-                    for(Prediction prediction:predictionArrayList){
-
-                        if(prediction.score>1.0)
-                            txtResult.setText(prediction.name);
-
-                    }
-                }
-            });
-
-
-
-
-
-
-        /*mDrawingView = findViewById(R.id.drawing_view);
+        mDrawingView = findViewById(R.id.drawing_view);
         mDrawingView.setDrawingBackground(Color.TRANSPARENT);
         mDrawingView.setUndoAndRedoEnable(true);
         Button clrBTN = (Button) findViewById(R.id.clrbtn);
@@ -120,7 +77,7 @@ public class Learn extends AppCompatActivity {
 
 
             }
-        });*/
+        });
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(Chart.EXTRA_TEXT);
@@ -139,20 +96,17 @@ public class Learn extends AppCompatActivity {
             case "KA":
                 gifView.setBackgroundResource(R.drawable.ka);
                 break;
-            case "DA":
-                gifView.setBackgroundResource(R.drawable.da);
+            case "DA/RA":
+                gifView.setBackgroundResource(R.drawable.da_ra);
                 break;
-            case "E":
-                gifView.setBackgroundResource(R.drawable.e);
+            case "E/I":
+                gifView.setBackgroundResource(R.drawable.e_i);
                 break;
             case "GA":
                 gifView.setBackgroundResource(R.drawable.ga);
                 break;
             case "HA":
                 gifView.setBackgroundResource(R.drawable.ha);
-                break;
-            case "I":
-                gifView.setBackgroundResource(R.drawable.i);
                 break;
             case "LA":
                 gifView.setBackgroundResource(R.drawable.la);
@@ -166,23 +120,17 @@ public class Learn extends AppCompatActivity {
             case "NGA":
                 gifView.setBackgroundResource(R.drawable.nga);
                 break;
-            case "O":
-                gifView.setBackgroundResource(R.drawable.o);
+            case "O/U":
+                gifView.setBackgroundResource(R.drawable.o_u);
                 break;
             case "PA":
                 gifView.setBackgroundResource(R.drawable.pa);
-                break;
-            case "RA":
-                gifView.setBackgroundResource(R.drawable.ra);
                 break;
             case "SA":
                 gifView.setBackgroundResource(R.drawable.sa);
                 break;
             case "TA":
                 gifView.setBackgroundResource(R.drawable.ta);
-                break;
-            case "U":
-                gifView.setBackgroundResource(R.drawable.u);
                 break;
             case "WA":
                 gifView.setBackgroundResource(R.drawable.wa);
@@ -196,20 +144,7 @@ public class Learn extends AppCompatActivity {
 
 
 
-        //penColor = ResourcesCompat.getColor(getResources(), R.color.colorBlack, null); //without theme
 
-        /*DrawingView drawingView = (DrawingView) findViewById(R.id.scratch_pad);
-        drawingView.initializePen(); //To use the pen mode to draw on the screen
-        drawingView.setPenSize(30); //To set the size of the pen
-        drawingView.setPenColor(penColor); //To set the color of the pen*/
-
-        //ERASER
-        //drawingView.initializeEraser(); //To use the eraser mode to clear the screen
-        //drawingView.setBackgroundColor(@ColorInt int color); //To set the background color of the drawing view
-        //drawingView.setEraserSize(float size); //To set the size of the eraser
-        //drawingView.saveImage(String filePath, String filename, Bitmap.CompressFormat format, int quality); //To save the image after your done drawing
-        //drawingView.loadImage(Bitmap bitmap); //Load image (your saved drawing)
-        //drawingView.clear(); //clear image
     }
 
 

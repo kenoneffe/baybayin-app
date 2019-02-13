@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        //
+
 
         <Button
             android:id="@+id/toreadquiz"
@@ -27,7 +27,7 @@
             android:textColor="@color/colorWhite" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/tohandWQ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
