@@ -16,6 +16,7 @@
         android:padding="10dp">
 
         //
+
         <Button
             android:id="@+id/toreadquiz"
             android:layout_width="match_parent"
@@ -23,8 +24,7 @@
             android:background="@drawable/mainbtn"
             android:gravity="center"
             android:text="Reading Quiz"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold" />
+            android:textColor="@color/colorWhite" />
 
         <Button
             android:id="@+id/button2"
@@ -34,8 +34,9 @@
             android:background="@drawable/mainbtn"
             android:gravity="center"
             android:text="Handwriting Quiz"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold" />
+            android:textColor="@color/colorWhite" />
+
+
     </LinearLayout>
 
 </RelativeLayout>

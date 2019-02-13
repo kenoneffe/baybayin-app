@@ -52,17 +52,17 @@ public class ReadQuizDBHelper extends SQLiteOpenHelper {
         addQuestion(q2);
         Questions q3 = new Questions("K", "E", "GA", "KA", 3);
         addQuestion(q3);
-        Questions q4 = new Questions("D", "DA", "NA", "BA", 1);
+        Questions q4 = new Questions("D", "DA/RA", "O/U", "E/I", 1);
         addQuestion(q4);
-        Questions q5 = new Questions("E", "BA", "E", "A", 2);
+        Questions q5 = new Questions("E", "O/U", "E/I", "DA/RA", 2);
         addQuestion(q5);
 
         Questions q6 = new Questions("G", "HA", "GA", "PA", 2);
         addQuestion(q6);
         Questions q7 = new Questions("H", "HA", "A", "I", 1);
         addQuestion(q7);
-        Questions q8 = new Questions("I", "LA", "SA", "I", 3);
-        addQuestion(q8);
+        //Questions q8 = new Questions("I", "LA", "SA", "I", 3);
+        //addQuestion(q8);
         Questions q9 = new Questions("L", "E", "LA", "GA", 2);
         addQuestion(q9);
         Questions q10 = new Questions("M", "A", "KA", "MA", 3);
@@ -72,19 +72,19 @@ public class ReadQuizDBHelper extends SQLiteOpenHelper {
         addQuestion(q11);
         Questions q12 = new Questions("ᜈ", "NA", "LA", "NGA", 1);
         addQuestion(q12);
-        Questions q13 = new Questions("O", "O", "I", "U", 1);
+        Questions q13 = new Questions("O", "DA/RA", "E/I", "O/U", 3);
         addQuestion(q13);
         Questions q14 = new Questions("P", "BA", "PA", "KA", 2);
         addQuestion(q14);
-        Questions q15 = new Questions("R", "RA", "WA", "YA", 1);
-        addQuestion(q15);
+        //Questions q15 = new Questions("R", "RA", "WA", "YA", 1);
+        //addQuestion(q15);
 
         Questions q16 = new Questions("S", "TA", "SA", "HA", 2);
         addQuestion(q16);
         Questions q17 = new Questions("T", "LA", "YA", "TA", 3);
         addQuestion(q17);
-        Questions q18 = new Questions("U", "U", "WA", "GA", 1);
-        addQuestion(q18);
+        //Questions q18 = new Questions("U", "U", "WA", "GA", 1);
+        //addQuestion(q18);
         Questions q19 = new Questions("W", "YA", "A", "WA", 3);
         addQuestion(q19);
         Questions q20 = new Questions("Y", "SA", "HA", "YA", 3);
