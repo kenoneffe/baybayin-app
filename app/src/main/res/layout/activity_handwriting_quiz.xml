@@ -24,7 +24,14 @@
         android:text="Write the correct character."
         android:textAlignment="center"
         android:textSize="18sp"
-
+        />
+    <TextView
+        android:id="@+id/itemqueueTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/17"
+        android:textAlignment="center"
+        android:textSize="18sp"
         />
 
     <FrameLayout
@@ -57,7 +64,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginRight="20sp"
-        android:layout_marginLeft="20sp">
+        android:layout_marginLeft="20sp"
+        android:weightSum="4">
 
         <Button
             android:id="@+id/clrbtnHQ"
@@ -79,6 +87,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="SUBMIT" />
+
+        <Button
+            android:id="@+id/nextHQ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Next" />
 
     </LinearLayout>
 </LinearLayout>

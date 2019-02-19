@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HandwritingQuiz"></activity>
+        <activity android:name=".PopGif"></activity>
+        <activity android:name=".HandwritingQuiz" />
+        <activity android:name=".Learn" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +25,6 @@
         <activity android:name=".Chart" />
         <activity android:name=".Quiz" />
         <activity android:name=".ReadQuiz" />
-        <activity android:name=".Learn" />
         <activity android:name=".Result" />
     </application>
 
